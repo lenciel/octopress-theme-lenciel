@@ -1,10 +1,13 @@
 ---
 layout: page
-title: OOPS! 錯誤 404 找不到你要找的文章嗎？
+title: WTF! There is a 404!
 footer: false
 ---
-<p>我們會儘快在短時間內，請我們唯一的開發者修好這個 bug。（才怪）</p>
-<p>以下最近的文章找找看有沒有幫助？</p>
+<div style="text-align:center;"> 
+<p>
+<img SRC="../images/sorry.gif" ALT="" WIDTH=705 HEIGHT=641> 
+<br>Lenciel会尽快找回Princess，才怪。
+<br>你可以在以下文章找找看有沒有帮助？或者写邮件给<a href="mailto:lenciel@gmail.com">Lenciel</a>，谢谢。</p>
 <section id="details"></section>
 <div id="blog-archives" class="missing">
 {% for post in site.posts limit: 5 %}
@@ -12,4 +15,5 @@ footer: false
   {% include archive_post.html %}
 </article>
 {% endfor %}
+</div>
 </div>
