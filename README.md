@@ -1,4 +1,4 @@
 octopress-theme-lenciel
 =======================
 
-theme for octopress
+This is the theme for lenciel.github.io
