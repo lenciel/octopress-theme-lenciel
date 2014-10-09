@@ -1,5 +1,5 @@
 ---
-layout: nil
+layout: null
 ---
 /* SITE */
   Octopress: v2.0

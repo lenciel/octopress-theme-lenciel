@@ -1,5 +1,3 @@
-<!-- Facebook Open Graph
-     Facebook Debugger: https://developers.facebook.com/tools/debug -->
 {% if page.title %}<meta property="og:title" content="{{ page.title }}" /><meta itemprop="name" content="{{ page.title }}" />{% endif %}
 <meta property="og:type" content="article" />
 <meta property="og:url" content="{{ canonical }}" />
@@ -12,47 +10,7 @@
 {% if page.categories %}<meta property="article:section" content="{{ page.categories }}" />{% endif %}
 <meta itemprop="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}" />
 {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}" />{% for keyword in page.keywords %}<meta property="article:tag" content="{{ keyword | replace: ',', '' }}" />{% endfor %}{% endif %}
+
 <!-- Combine multiple fonts into one request -->
-<!--<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">-->
 <link href="http://fonts.useso.com/css?family=PT+Sans:regular,italic,bold,bolditalic|Patua+One|Yanone+Kaffeesatz" rel="stylesheet" type="text/css">
-<!--<style>
-  @font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url('http://lenciel.cn/fonts/PTSans-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url('http://lenciel.cn/fonts/PTSans-Bold.woff') format('woff');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('PT Sans Italic'), local('PTSans-Italic'), url('http://lenciel.cn/fonts/PTSans-Italic.woff') format('woff');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url('http://lenciel.cn/fonts/PTSans-BoldItalic.woff') format('woff');
-}
-@font-face {
-  font-family: 'Patua One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Patua One'), local('PatuaOne-Regular'), url('http://lenciel.cn/fonts/PatuaOne-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: 'Yanone Kaffeesatz';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Yanone Kaffeesatz Regular'), local('YanoneKaffeesatz-Regular'), url('http://lenciel.cn/fonts/YanoneKaffeesatz-Regular.woff') format('woff');
-}
-</style>-->
-<!-- jQuery -->
-<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
-<script src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-1.7.2.min.js">
+
