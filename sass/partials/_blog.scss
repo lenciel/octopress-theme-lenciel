@@ -1,6 +1,17 @@
 article {
   padding-top: 1em;
-  a { @extend .force-wrap; }
+  a {
+    color: #d0648a;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1px 1px #efefef,2px 2px #ccc;
+    word-wrap: break-word;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
   header {
     position: relative;
     padding-top: 2em;
@@ -9,8 +20,9 @@ article {
     background: $img-border bottom left repeat-x;
     h1 {
       margin: 0;
+      text-shadow: 1px 1px #efefef,2px 2px #828887;
       a { text-decoration: none;
-        &:hover { text-decoration: underline; } }
+        &:hover { text-decoration: none; } }
     }
     p {
       font-size: .9em;
@@ -29,8 +41,9 @@ article {
     }
   }
   h2 {
+    text-shadow: 1px 1px #efefef,2px 2px #828887;
     padding-top: 0.8em;
-    background: $img-border top left repeat-x;
+    border-top: 3px dashed #828887;
   }
   .entry-content & h2:first-child, header + h2 { padding-top: 0; }
   h2:first-child, header + h2 { background: none; }
@@ -84,7 +97,7 @@ article {
 }
 article + article {
   .blog-index & {
-    background: $img-border top left repeat-x;
+    border-top: 3px dashed #828887;
   }
 }
 #content .blog-index {
@@ -93,7 +106,10 @@ article + article {
   article header { background: none; padding-bottom: 0; }
   article h1 {
     font-size: 2.2em;
-    a { color: inherit; &:hover { color: $link-color-hover; } }
+    text-shadow: 1px 1px #efefef,2px 2px #828887;
+    a { text-decoration: none;
+        color: inherit;
+        &:hover { text-decoration: none; color: $link-color-hover;} }
   }
   a[rel=full-article] {
     background: darken($main-bg, 5);
@@ -126,7 +142,7 @@ article + article {
   text-align: center;
   font-size: .95em;
   position: relative;
-  background: $img-border top left repeat-x;
+  border-top: 3px dashed #828887;
   padding: {top: 1.5em; bottom: 1.5em;}
   a {
     text-decoration: none;

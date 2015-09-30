@@ -44,6 +44,7 @@ h1 {
 #{headings()}{
   @extend .heading;
   text-rendering: optimizelegibility;
+  text-shadow: 1px 1px #efefef,2px 2px #828887;
   margin-bottom: 1em;
   font-weight: bold;
 }
