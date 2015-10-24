@@ -17,6 +17,10 @@ html {
     border-right: none;
   }
 
+  audio {
+    width:100%;
+  }
+
   i.icon { // 使用 Pictos 的 icon font
     font-family: 'Pictos Custom';
     -webkit-font-smoothing: antialiased;
